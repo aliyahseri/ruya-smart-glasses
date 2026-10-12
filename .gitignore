@@ -1,0 +1,63 @@
+# Environments
+.venv/
+venv/
+env/
+.env
+!.env.example
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.ipynb_checkpoints/
+dist/
+build/
+node_modules/
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+desktop.ini
+*:Zone.Identifier
+
+# Data / model artifacts
+*.csv
+*.tsv
+*.parquet
+*.db
+*.sqlite
+*.sqlite3
+*.pkl
+*.pickle
+*.joblib
+*.pt
+*.pth
+*.ckpt
+*.h5
+*.npy
+*.npz
+*.faiss
+*.mat
+*.zip
+*.mp4
+*.avi
+*.onnx
+*.wav
+*.whl
+*.tar.gz
+
+# Project-specific local assets (wheels, voices, binaries, test media)
+all_wheels/
+torch_wheels/
+lap_wheel/
+tts_models/
+OCRmodels/
+ruya_camera/
+*.exe
+piper
+testvideo.mp4
+test_image.jpg
+_temp_out.avi

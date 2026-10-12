@@ -1,0 +1,39 @@
+# Computer Vision
+opencv-python>=4.8.0
+numpy>=1.24.0
+
+# Deep Learning / Object Detection / Depth
+torch>=2.0.0
+ultralytics>=8.0.0
+timm                 # required by MiDaS_small (loaded via torch.hub)
+
+# OCR
+easyocr>=1.6.0
+# Optional fallback backend (also needs the system package `tesseract-ocr`):
+# pytesseract
+
+# Speech Recognition (import name: `whisper`)
+openai-whisper>=20230314
+sounddevice>=0.4.6
+
+# Audio Processing (used by the standalone speech_to_text.py / record_audio.py scripts)
+scipy>=1.10.0
+
+# LLM / Command Extraction (needs a running Ollama server with llama3.2:1b)
+ollama>=0.1.0
+
+# Text to Speech
+# text_to_speech.py is Windows-only (imports winsound, uses SAPI5 via pyttsx3);
+# on the Pi, ssh_deploy.py uploads text_to_speech_pi.py in its place.
+pyttsx3>=2.90
+piper-tts>=1.2.0
+
+# System / Battery
+psutil>=5.9.0
+
+# ESP32-CAM over USB-serial
+pyserial
+
+# Deployment to the Raspberry Pi (ssh_deploy.py and helpers)
+paramiko
+python-dotenv
